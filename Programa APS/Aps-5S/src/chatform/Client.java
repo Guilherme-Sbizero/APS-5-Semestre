@@ -24,13 +24,13 @@ import java.awt.Color;
 public class Client extends JFrame implements Runnable {
 
     /**
-     * Variáveis do Socket
+     * Varia veis do Socket
      */
     private Socket socket;
     private BufferedWriter bufferWriter;
 
     /**
-     * Variáveis da clsse Client
+     * Variaveis da clsse Client
      */
     private String user;
     private String serverIP;
@@ -38,7 +38,7 @@ public class Client extends JFrame implements Runnable {
     Login login = new Login();
 
     /**
-     * Variáveis do Form 
+     * Variaveis do Form
      */
     private static final long serialVersionUID = 5391582161763137020L;
     private JTextField inputText;
@@ -46,7 +46,7 @@ public class Client extends JFrame implements Runnable {
     
 
     /**
-     * Execução da aplicação
+     * Execucao da aplicacao
      */
     public void run() {
         try {
@@ -59,8 +59,8 @@ public class Client extends JFrame implements Runnable {
     }
 
     /**
-     * Cria o frame, aqui é verificado a conexão do socket, 
-     * como também, se necessário encerra o programa ou retorna para tela anterior
+     * Cria o frame, aqui e verificado a conexao do socket,
+     * como tambem, se necessario encerra o programa ou retorna para tela anterior
      */
     public Client(String[] args) {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -84,7 +84,7 @@ public class Client extends JFrame implements Runnable {
                                }
         );
 
-        /* Aqui é definido as propriedades da interface e seus componentes
+        /* Aqui e definido as propriedades da interface e seus componentes
          * 
          */
         setBounds(100, 100, 600, 500);
@@ -93,7 +93,7 @@ public class Client extends JFrame implements Runnable {
         setContentPane(contentPane);
         contentPane.setLayout(new BorderLayout(0, 0));
         setLocationRelativeTo(null);
-        setTitle("Aplicação de Conversa (Cliente)");
+        setTitle("Aplicacao de Conversa (Cliente)");
 
         output = new JTextArea();
         output.setBackground(Color.WHITE);
@@ -123,8 +123,9 @@ public class Client extends JFrame implements Runnable {
         buttons.setLayout(new BorderLayout(0, 0));
 
         JButton btnSend = new JButton("Enviar");
-        btnSend.setBackground(new Color(72, 209, 204));
+        btnSend.setBackground(new Color(7, 242, 237));
         btnSend.setFont(new Font("Arial Black", Font.PLAIN, 11));
+
         btnSend.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String text = inputText.getText();
@@ -162,7 +163,7 @@ public class Client extends JFrame implements Runnable {
         });
 
         JButton btnExit = new JButton("Desconectar");
-        btnExit.setBackground(new Color(72, 209, 204));
+        btnExit.setBackground(new Color(7, 242, 237));
         btnExit.setFont(new Font("Arial Black", Font.PLAIN, 11));
         btnExit.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -177,7 +178,7 @@ public class Client extends JFrame implements Runnable {
         buttons.add(btnExit, BorderLayout.SOUTH);
         
         JButton btnBack = new JButton("Voltar");
-        btnBack.setBackground(new Color(72, 209, 204));
+        btnBack.setBackground(new Color(7, 242, 237));
         btnBack.setFont(new Font("Arial Black", Font.PLAIN, 11));
         btnBack.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
@@ -216,8 +217,8 @@ public class Client extends JFrame implements Runnable {
     }
 
     
-    /*Aqui verifica o IP e a Porta informados no login e estabelece a conexão com o servidor,
-     * caso contrário, apresenta a mensagem de erro
+    /*Aqui verifica o IP e a Porta informados no login e estabelece a conexao com o servidor,
+     * caso contrario, apresenta a mensagem de erro
      * 
      */
     private void establishConnection() {
@@ -227,7 +228,7 @@ public class Client extends JFrame implements Runnable {
             bufferWriter.write(user + "\r\n");
             bufferWriter.flush();
         } catch (ConnectException e) {
-            JOptionPane.showMessageDialog(null, "Nao foi possível criar a conexão, servidor indisponível na porta e IP indicados.");
+            JOptionPane.showMessageDialog(null, "Nao foi possovel criar a conexao, servidor indisponivel na porta e IP indicados.");
             Client.this.dispose();
 			login.setVisible(true);
             
@@ -238,7 +239,7 @@ public class Client extends JFrame implements Runnable {
     }
 
     /*
-     * Aqui é verificado a mensagem, se ocorrer algum problema na mensagem, apresenta erro e desconeta o usuário
+     * Aqui e verificado a mensagem, se ocorrer algum problema na mensagem, apresenta erro e desconeta o usuario
      */
     private void listenConnection() {
         try {
@@ -256,13 +257,13 @@ public class Client extends JFrame implements Runnable {
                     if(command.equals("Text")) {
                         writeOutput(textMsg);
                     } else {
-                        writeOutput("Algo está errado na mensagem recebida do servidor");
+                        writeOutput("Algo esta errado na mensagem recebida do servidor");
                     }
                 }
             } while (!("Disconnect " + user).equalsIgnoreCase(msg));
 
         } catch (Exception e) {
-            System.out.println("Impossível escutar servidor. O mesmo possívelmente está indisponível.");
+            System.out.println("Impossovel escutar servidor. O mesmo possivelmente esta indisponivel.");
         }
     }
 
@@ -273,7 +274,7 @@ public class Client extends JFrame implements Runnable {
             bufferWriter.close();
             socket.close();
         } catch (Exception e) {
-            System.out.println("Nao é possível fechar conexão.");
+            System.out.println("Nao e possivel fechar conexao.");
         }
     }
 }

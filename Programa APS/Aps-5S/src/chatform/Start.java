@@ -55,7 +55,7 @@ public class Start extends JFrame {
         {
             JButton btnServidor = new JButton("Servidor");
            
-            btnServidor.setBackground(new Color(72, 209, 204));
+            btnServidor.setBackground(new Color(7, 242, 237));
             btnServidor.setFont(new Font("Arial Black", Font.PLAIN, 11));
             btnServidor.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent arg0) {
@@ -71,7 +71,7 @@ public class Start extends JFrame {
         {
             JButton btnCliente = new JButton("Cliente");
            
-            btnCliente.setBackground(new Color(72, 209, 204));
+            btnCliente.setBackground(new Color(7, 242, 237));
             btnCliente.setFont(new Font("Arial Black", Font.PLAIN, 11));
             btnCliente.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {

@@ -70,7 +70,7 @@ public class Login extends JFrame {
 		}
 
         JButton btnLogin = new JButton("Login");
-        btnLogin.setBackground(new Color(72, 209, 204));
+        btnLogin.setBackground(new Color(7, 242, 237));
         btnLogin.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 Login.this.dispose();
@@ -86,7 +86,7 @@ public class Login extends JFrame {
         
         JButton btnBack = new JButton("Voltar");
         btnBack.setFont(new Font("Arial Black", Font.PLAIN, 12));
-        btnBack.setBackground(new Color(72, 209, 204));
+        btnBack.setBackground(new Color(7, 242, 237));
         btnBack.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		Login.this.dispose();

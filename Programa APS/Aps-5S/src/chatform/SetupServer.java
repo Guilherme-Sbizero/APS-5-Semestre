@@ -97,7 +97,7 @@ public class SetupServer extends JFrame {
 		inputPort.setColumns(10);
 		
 		btnOk = new JButton("Ok");
-		btnOk.setBackground(new Color(72, 209, 204));
+		btnOk.setBackground(new Color(7, 242, 237));
 		btnOk.setFont(new Font("Arial Black", Font.PLAIN, 11));
 		btnOk.setBounds(90, 86, 73, 23);
 		panelConfig.add(btnOk);
@@ -109,7 +109,7 @@ public class SetupServer extends JFrame {
 		
 		btnBack = new JButton("Voltar");
 		btnBack.setFont(new Font("Arial Black", Font.PLAIN, 11));
-		btnBack.setBackground(new Color(72, 209, 204));
+		btnBack.setBackground(new Color(7, 242, 237));
 		btnBack.setBounds(177, 86, 73, 23);
 		panelConfig.add(btnBack);
 		
@@ -128,19 +128,19 @@ public class SetupServer extends JFrame {
 		panelStatus.add(lblPort);
 		
 		lblValueIP = new JLabel(); 
-		lblValueIP.setForeground(new Color(0, 100, 0));
+		lblValueIP.setForeground(new Color(141, 28, 79));
 		lblValueIP.setFont(new Font("Arial Black", Font.PLAIN, 13));
 		lblValueIP.setBounds(67, 11, 171, 14);
 		panelStatus.add(lblValueIP);
 		
 		lblValuePort = new JLabel(); 
-		lblValuePort.setForeground(new Color(0, 100, 0));
+		lblValuePort.setForeground(new Color(141, 28, 79));
 		lblValuePort.setFont(new Font("Arial Black", Font.PLAIN, 13));
 		lblValuePort.setBounds(97, 36, 121, 14);
 		panelStatus.add(lblValuePort);
 		
 		btnStopConnection = new JButton("Encerrar Conexão");
-		btnStopConnection.setBackground(new Color(72, 209, 204));
+		btnStopConnection.setBackground(new Color(7, 242, 237));
 		btnStopConnection.setFont(new Font("Arial Black", Font.PLAIN, 11));
 		btnStopConnection.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { 
@@ -152,7 +152,7 @@ public class SetupServer extends JFrame {
 		
 		btnBack_1 = new JButton("Voltar");
 		btnBack_1.setFont(new Font("Arial Black", Font.PLAIN, 11));
-		btnBack_1.setBackground(new Color(72, 209, 204));
+		btnBack_1.setBackground(new Color(7, 242, 237));
 		btnBack_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SetupServer.this.dispose();
