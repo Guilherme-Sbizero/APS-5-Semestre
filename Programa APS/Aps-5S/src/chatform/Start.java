@@ -18,13 +18,13 @@ import java.awt.Color;
 public class Start extends JFrame {
 
     /*
-     * Variáveis da classe Start
+     * Variaveis da classe Start
     */
     private static final long serialVersionUID = 5602644222765201727L;
     private final JPanel contentPanel = new JPanel();
 
     /* 
-     *  Executa a aplicação
+     *  Executa a aplicacao
      */
     public static void main(String[] args) {
         try {
@@ -36,7 +36,7 @@ public class Start extends JFrame {
     }
 
     /*
-     *  Definido as propriedades dos componentes utilizado e ação dos botões
+     *  Definido as propriedades dos componentes utilizado e acao dos botoes
      */
     public Start() {
     	getContentPane().setBackground(Color.BLACK);
@@ -51,7 +51,7 @@ public class Start extends JFrame {
         getContentPane().add(contentPanel);
         contentPanel.setLayout(null);
         setLocationRelativeTo(null);
-        setTitle("Aplicação de Conversa");
+        setTitle("Aplicacao de Conversa");
         {
             JButton btnServidor = new JButton("Servidor");
            

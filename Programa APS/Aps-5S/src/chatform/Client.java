@@ -24,7 +24,7 @@ import java.awt.Color;
 public class Client extends JFrame implements Runnable {
 
     /**
-     * Varia veis do Socket
+     * Variaveis do Socket
      */
     private Socket socket;
     private BufferedWriter bufferWriter;

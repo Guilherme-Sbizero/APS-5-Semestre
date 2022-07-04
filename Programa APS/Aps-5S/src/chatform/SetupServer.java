@@ -21,12 +21,12 @@ import java.awt.Color;
 
 public class SetupServer extends JFrame {
 	/**
-	 * Server variáveis
+	 * Server variaveis
 	 */
 	private static ServerSocket server;
 
 	/**
-	 *  Form variáveis
+	 *  Form variaveis
 	 */
 	private static final long serialVersionUID = 4998717362394143017L;
 	private JPanel contentPane;
@@ -48,7 +48,7 @@ public class SetupServer extends JFrame {
 
 	
 	/**
-	 * Executa a aplicação
+	 * Executa a aplicacao
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -68,8 +68,8 @@ public class SetupServer extends JFrame {
 
 	
 	/**
-	 * Aqui é definido as propriedades dos componentes utilizados nessa tela
-	 * além de definir a ação dos botões
+	 * Aqui e definido as propriedades dos componentes utilizados nessa tela
+	 * alem de definir a acao dos botoes
 	 */
 	public SetupServer() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -79,13 +79,13 @@ public class SetupServer extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(new CardLayout(0, 0));
 		this.setLocationRelativeTo(null);
-		this.setTitle("Aplicação de Conversa (Servidor)");
+		this.setTitle("Aplicacao de Conversa (Servidor)");
 		
 		panelConfig = new JPanel();
 		contentPane.add(panelConfig, "panelConfig");
 		panelConfig.setLayout(null);
 		
-		JLabel lblNumeroDaPorta = new JLabel("Número da porta:");
+		JLabel lblNumeroDaPorta = new JLabel("Numero da porta:");
 		lblNumeroDaPorta.setBounds(10, 35, 113, 18);
 		panelConfig.add(lblNumeroDaPorta);
 		lblNumeroDaPorta.setFont(new Font("Arial Black", Font.PLAIN, 11));
@@ -139,7 +139,7 @@ public class SetupServer extends JFrame {
 		lblValuePort.setBounds(97, 36, 121, 14);
 		panelStatus.add(lblValuePort);
 		
-		btnStopConnection = new JButton("Encerrar Conexão");
+		btnStopConnection = new JButton("Encerrar Conexï¿½o");
 		btnStopConnection.setBackground(new Color(7, 242, 237));
 		btnStopConnection.setFont(new Font("Arial Black", Font.PLAIN, 11));
 		btnStopConnection.addActionListener(new ActionListener() {
@@ -173,8 +173,8 @@ public class SetupServer extends JFrame {
 	}
 
 	/*
-	 * Aqui é iniciado o servidor, o inetadress pega as informações do localhost
-	 * e inicia o servidor, deixando disponivel para novas conexões
+	 * Aqui e iniciado o servidor, o inetadress pega as informacoes do localhost
+	 * e inicia o servidor, deixando disponivel para novas conexoes
 	 */
 	private void startServer() {
 		try {

@@ -29,7 +29,7 @@ public class Login extends JFrame {
 	private static String hostaddress;
     
     /**
-     * Executa a aplicação
+     * Executa a aplicacao
      */
     public static void main(String[] args) {
     	
@@ -121,7 +121,7 @@ public class Login extends JFrame {
         inputPort.setBounds(138, 76, 222, 30);
         contentPane.add(inputPort);
 
-        JLabel lblUsurio = new JLabel("Nome de usuário:");
+        JLabel lblUsurio = new JLabel("Nome de usuario:");
         lblUsurio.setFont(new Font("Arial Black", Font.PLAIN, 12));
         lblUsurio.setBounds(5, 134, 151, 39);
         contentPane.add(lblUsurio);
